@@ -22,7 +22,7 @@ const Club = () => {
             <div className='text'>
                 <p className='title-name'>
                     <h1><FontAwesomeIcon className='font-awesome' icon={faDumbbell}></FontAwesomeIcon>
-                        Yes-Club</h1>
+                    </h1><h1>Yes-Club</h1>
                 </p>
                 <div className='left-side'>
                     {

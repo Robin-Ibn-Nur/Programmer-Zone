@@ -3,15 +3,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Propertise.css';
 
 import React from 'react';
+import Toast from '../Toast/Toast';
 
 const Propertise = ({ time }) => {
-    console.log(time);
     const secondBtn = () => {
-
+        
     }
     return (
         <div>
-            <h1>welcome: {time.length}</h1>
+            <h1>welcome: {}</h1>
             <div className='profile'>
                 <h3> <FontAwesomeIcon icon={faUser}></FontAwesomeIcon> RoBiN</h3>
                 <div className='about'>
@@ -32,8 +32,9 @@ const Propertise = ({ time }) => {
                 </div>
                 <h4 className='text'>Exercise Details</h4>
                 <h5 className='input-field'>Exercise time: { } </h5>
-                <h5 className='input-field'>Break time: </h5>
-                <button className='toast'>Activity Completed</button>
+                <h5 className='input-field'>Break time: {secondBtn} </h5>
+                <Toast></Toast>
+                {/* <button className='toast'>Activity Completed</button> */}
             </div>
         </div>
     );
