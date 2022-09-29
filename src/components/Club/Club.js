@@ -3,18 +3,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import Details from '../Details/Details';
 import Profile from '../Profile/Profile';
+// import Profile from '../Profile/Profile';
 import './Club.css'
 
 const Club = () => {
     const [positives, setPositives] = useState([]);
-
+    const [times, setTimes] = useState([])
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
             .then(data => setPositives(data))
     }, []);
-    const timeAddToProfile = () => {
-        // console.log(timeAddToProfile)
+    const timeAddToProfile = (positives) => {
+        const newTime = [...times, positives]
+        setTimes(newTime);
     }
     return (
         <div className='club-container'>
@@ -34,7 +36,8 @@ const Club = () => {
                 </div>
             </div>
             <div className='right-side'>
-                <Profile></Profile>
+                <Profile time={times}></Profile>
+                {/* <Profile time={times}></Profile> */}
             </div>
         </div>
     );
