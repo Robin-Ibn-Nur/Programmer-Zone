@@ -1,5 +1,4 @@
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fa0, faCarriageBaby, faCoffee, faDumbbell, faHeartPulse, faHryvniaSign, faLandMineOn, faPersonDressBurst, faPersonRays, faPersonRunning, faPlus, faPortrait, faSignature, faSignIn, faSpinner, faTruckArrowRight, faWonSign, faYen, faYenSign } from '@fortawesome/free-solid-svg-icons';
+import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import Details from '../Details/Details';
@@ -29,7 +28,7 @@ const Club = () => {
                         positives.map(item => <Details
                             item={item}
                             key={item.id}
-                        timeAddToProfile={timeAddToProfile}
+                            timeAddToProfile={timeAddToProfile}
                         ></Details>)
                     }
                 </div>
