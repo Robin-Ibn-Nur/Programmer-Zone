@@ -1,0 +1,20 @@
+.header {
+    height: 70px;
+    width: 100%;
+    background-color: rgba(44, 25, 218, 0.144);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: xx-large;
+    font-weight: 700;
+}
+.header:hover{
+    background-color: cadetblue;
+    cursor: not-allowed;
+}
+
+.header a {
+    text-decoration: none;
+    margin-left: 36px;
+    color: rgb(51, 35, 35);
+}
