@@ -12,6 +12,21 @@
     border: 1px solid black;
 }
 
+.title-name h1 {
+    font-size: 4vw;
+}
+
+.title-name {
+    display: flex;
+    align-content: center;
+    justify-content: start;
+}
+
+.font-awesome {
+    height: 80px;
+    width: 50%;
+}
+
 .right-side {
     border: 1px solid blueviolet;
 }

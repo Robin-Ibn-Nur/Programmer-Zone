@@ -1,5 +1,5 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { fa0, faCarriageBaby, faCoffee, faHeartPulse, faHryvniaSign, faLandMineOn, faPersonDressBurst, faPersonRays, faPersonRunning, faPlus, faPortrait, faSignature, faSignIn, faSpinner, faTruckArrowRight, faWonSign, faYen, faYenSign } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import Details from '../Details/Details';
@@ -16,8 +16,11 @@ const Club = () => {
     }, []);
     return (
         <div className='club-container'>
-            <div>
-                <h1>Welcome To Yes-Club</h1>
+            <div className='text'>
+                <p className='title-name'>
+                    <h1><FontAwesomeIcon className='font-awesome' icon={faYen}></FontAwesomeIcon>
+                        Yes-Club</h1>
+                </p>
                 <div className='left-side'>
                     {
                         positives.map(item => <Details

@@ -3,7 +3,7 @@ import './Details.css'
 
 const Details = ({ item }) => {
     console.log(item)
-    const { name, time, img } = {}
+    const { name, time, img } = item;
     return (
         <div className='details-card'>
             <img src={img} alt="" />
