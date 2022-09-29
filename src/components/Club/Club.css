@@ -1,0 +1,41 @@
+.club-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.left-side {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.right-side {
+    border: 1px solid blueviolet;
+}
+
+@media only screen and (max-width: 425px) {
+
+    /* For mobile: */
+    .left-side {
+        display: flexbox;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For tablet: */
+    .left-side {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 20px;
+        border: 1px solid black;
+    }
+
+}

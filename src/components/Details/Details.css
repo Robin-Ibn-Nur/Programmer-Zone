@@ -1,0 +1,16 @@
+.details-card{
+    border: 2px solid black;
+    height: 300px;
+    width: 90%;
+    position: relative;
+}
+.details-card button{
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    background-image: linear-gradient(rgb(19, 80, 150), rgb(238, 6, 6));
+    color: whitesmoke;
+    padding: 10px;
+    width: 100%;
+    bottom: 0%;
+}
