@@ -1,5 +1,5 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { fa0, faCarriageBaby, faCoffee, faHeartPulse, faHryvniaSign, faLandMineOn, faPersonDressBurst, faPersonRays, faPersonRunning, faPlus, faPortrait, faSignature, faSignIn, faSpinner, faTruckArrowRight, faWonSign, faYen, faYenSign } from '@fortawesome/free-solid-svg-icons';
+import { fa0, faCarriageBaby, faCoffee, faDumbbell, faHeartPulse, faHryvniaSign, faLandMineOn, faPersonDressBurst, faPersonRays, faPersonRunning, faPlus, faPortrait, faSignature, faSignIn, faSpinner, faTruckArrowRight, faWonSign, faYen, faYenSign } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import Details from '../Details/Details';
@@ -14,11 +14,14 @@ const Club = () => {
             .then(res => res.json())
             .then(data => setPositives(data))
     }, []);
+    const timeAddToProfile = () => {
+        // console.log(timeAddToProfile)
+    }
     return (
         <div className='club-container'>
             <div className='text'>
                 <p className='title-name'>
-                    <h1><FontAwesomeIcon className='font-awesome' icon={faYen}></FontAwesomeIcon>
+                    <h1><FontAwesomeIcon className='font-awesome' icon={faDumbbell}></FontAwesomeIcon>
                         Yes-Club</h1>
                 </p>
                 <div className='left-side'>
@@ -26,7 +29,7 @@ const Club = () => {
                         positives.map(item => <Details
                             item={item}
                             key={item.id}
-                        // handleAddToCart={handleAddToCart}
+                        timeAddToProfile={timeAddToProfile}
                         ></Details>)
                     }
                 </div>

@@ -1,0 +1,58 @@
+.profile {
+    position: sticky;
+    top: 0%;
+}
+
+.profile h3 {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0 20px 0;
+    background-color: rgb(179, 202, 223);
+}
+
+.text {
+    margin-left: 15px;
+}
+
+.input-field {
+    background-color: rgb(185, 198, 211);
+    margin-left: 15px;
+    padding: 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    background-color: wheat;
+}
+
+.button {
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-around;
+    background-color: rgb(181, 215, 228);
+    padding: 20px;
+    margin: 8px 8px;
+}
+
+button {
+    border-radius: 5px;
+    background-color: rgb(236, 231, 220);
+    border: none;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+button:hover {
+    background-color: rgb(117, 117, 231);
+    color: whitesmoke;
+
+}
+
+.toast {
+    margin: 5px 5px;
+    background-color: dodgerblue;
+    padding: 15px;
+    width: 95%;
+    font-size: large;
+}
