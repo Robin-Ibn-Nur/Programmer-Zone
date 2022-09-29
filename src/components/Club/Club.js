@@ -2,9 +2,7 @@ import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import Details from '../Details/Details';
-// import Profile from '../Profile/Profile';
 import Propertise from '../Propertise/Propertise';
-// import Profile from '../Profile/Profile';
 import './Club.css'
 
 const Club = () => {
@@ -38,8 +36,6 @@ const Club = () => {
             </div>
             <div className='right-side'>
                 <Propertise time={times}></Propertise>
-                {/* <Profile time={times}></Profile> */}
-                {/* <Profile time={times}></Profile> */}
             </div>
         </div>
     );
