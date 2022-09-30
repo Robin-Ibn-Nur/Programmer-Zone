@@ -3,9 +3,9 @@ import React from 'react';
 // import 'react-toastify/dist/ReactToastify.css';
 // toast.configure()
 const Toast = () => {
-    console.log('button');
+    // console.log('button');
     const button = () => {
-        console.log('click')
+        // console.log('click')
         // toast();
     }
     return (
