@@ -48,11 +48,3 @@ button:hover {
     color: whitesmoke;
 
 }
-
-.toast {
-    margin: 5px 5px;
-    background-color: dodgerblue;
-    padding: 15px;
-    width: 95%;
-    font-size: large;
-}
