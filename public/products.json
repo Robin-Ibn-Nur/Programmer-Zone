@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "JAVA SCRIPT",
-    "text": "This is an Awesome Club. Joining here will make your life blessed",
+    "text": "Joining here will make your life blessed",
     "time": 10,
     "ratings": 4,
     "img": "https://cdn-icons-png.flaticon.com/512/1199/1199124.png",
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "name": "JAVA",
-    "text": "This is an Awesome Club. Joining here will make your life blessed",
+    "text": "Joining here will make your life blessed",
     "time": 20,
     "ratings": 4,
     "img": "https://cdn-icons-png.flaticon.com/512/919/919854.png",
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "name": "Python",
-    "text": "This is an Awesome Club. Joining here will make your life blessed",
+    "text": "Joining here will make your life blessed",
     "time": 30,
     "ratings": 4,
     "img": "https://cdn-icons-png.flaticon.com/512/5968/5968350.png",
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "name": "C++",
-    "text": "This is an Awesome Club. Joining here will make your life blessed",
+    "text": "Joining here will make your life blessed",
     "time": 40,
     "ratings": 4,
     "img": "https://cdn-icons-png.flaticon.com/512/6132/6132222.png",
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "name": "C#",
-    "text": "This is an Awesome Club. Joining here will make your life blessed",
+    "text": "Joining here will make your life blessed",
     "time": 50,
     "ratings": 4,
     "img": "https://cdn-icons-png.flaticon.com/512/6132/6132222.png",
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "name": "PHP",
-    "text": "This is an Awesome Club. Joining here will make your life blessed",
+    "text": "Joining here will make your life blessed",
     "time": 60,
     "ratings": 4,
     "img": "https://cdn-icons-png.flaticon.com/512/919/919830.png",
