@@ -1,4 +1,4 @@
-import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
+import { faDesktop } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import Details from '../Details/Details';
@@ -21,8 +21,8 @@ const Club = () => {
         <div className='club-container'>
             <div className='text'>
                 <p className='title-name'>
-                    <h1><FontAwesomeIcon className='font-awesome' icon={faDumbbell}></FontAwesomeIcon>
-                    </h1><h1>Yes-Club</h1>
+                    <h1><FontAwesomeIcon className='font-awesome' icon={faDesktop}></FontAwesomeIcon>
+                    </h1><h1>Programmer-Zone</h1>
                 </p>
                 <div className='left-side'>
                     {
