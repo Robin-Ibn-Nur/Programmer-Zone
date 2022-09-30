@@ -41,7 +41,6 @@ const Propertise = ({ time }) => {
                 <h5 className='input-field'>Exercise time: {total} Seconds</h5>
                 <h5 className='input-field'>Break time: {number} Seconds</h5>
                 <Toast></Toast>
-                {/* <button className='toast'>Activity Completed</button> */}
             </div>
         </div>
     );
