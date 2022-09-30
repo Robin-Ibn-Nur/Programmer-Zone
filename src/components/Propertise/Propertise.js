@@ -1,10 +1,10 @@
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 import './Propertise.css';
 import Toast from '../Toast/Toast';
-import { addToLocalStorage } from '../../utilities/fakedb';
+import { addToLocalStorage, } from '../../utilities/fakedb';
 const Propertise = ({ time }) => {
     let total = 0;
     time.forEach(element => {
@@ -15,13 +15,9 @@ const Propertise = ({ time }) => {
     const secondBtn = (numbers) => {
         const newNumber = parseInt(numbers);
         console.log(newNumber);
+        addToLocalStorage(number)
         setNumber(newNumber);
     }
-
-    useEffect(() => {
-        localStorage.setItem('Number', JSON.stringify(number));
-
-    }, [number]);
     return (
         <div>
             <div className='profile'>

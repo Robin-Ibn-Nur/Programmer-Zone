@@ -6,12 +6,12 @@ import './Toast.css'
 const Toast = () => {
     // console.log('button');
     const button = () => {
-        toast('log in successfull', { position: toast.POSITION.TOP_CENTER });
+        toast('Welcome', { position: toast.POSITION.TOP_CENTER });
     }
     return (
         <div>
             <h1>Toast is Here</h1>
-            <button className='toast' onClick={button}>welcome</button>
+            <button className='toast' onClick={button}>This is Toast</button>
             <ToastContainer></ToastContainer>
         </div>
     );
