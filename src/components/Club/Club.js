@@ -20,10 +20,11 @@ const Club = () => {
     return (
         <div className='club-container'>
             <div className='text'>
-                <p className='title-name'>
+                <div className='title-name'>
                     <h1><FontAwesomeIcon className='font-awesome' icon={faDesktop}></FontAwesomeIcon>
-                    </h1><h1>Programmer-Zone</h1>
-                </p>
+                    </h1>
+                    <h1>Programmer-Zone</h1>
+                </div>
                 <div className='left-side'>
                     {
                         positives.map(item => <Details

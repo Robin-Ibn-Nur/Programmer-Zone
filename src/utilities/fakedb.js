@@ -1,5 +1,5 @@
 const getStoredTime = () => {
-    let time = {};
+    let time = [0];
 
     //get the shopping cart from local storage
     const storedTime = localStorage.getItem('break-time');
