@@ -25,6 +25,7 @@ const Club = () => {
                     </h1>
                     <h1>Programmer-Zone</h1>
                 </div>
+                <h5>Select Today's Exercise</h5>
                 <div className='left-side'>
                     {
                         positives.map(item => <Details
