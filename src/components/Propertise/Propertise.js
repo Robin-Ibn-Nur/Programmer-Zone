@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 import './Propertise.css';
 import Toast from '../Toast/Toast';
-import { addToDb } from '../../utilities/fakedb';
+import { addToLocalStorage } from '../../utilities/fakedb';
 const Propertise = ({ time }) => {
     let total = 0;
     time.forEach(element => {
@@ -16,7 +16,7 @@ const Propertise = ({ time }) => {
         const newNumber = parseInt(numbers);
         console.log(newNumber);
         setNumber(newNumber);
-        addToDb(numbers);
+        addToLocalStorage(numbers);
     }
     return (
         <div>

@@ -1,5 +1,5 @@
 // use local storage to manage cart data
-const addToDb = numbers => {
+const addToLocalStorage = numbers => {
     let breakTime = {};
 
     //get the shopping cart from local storage
@@ -32,6 +32,6 @@ const getStoredTime = () => {
 }
 
 export {
-    addToDb,
+    addToLocalStorage,
     getStoredTime
 }
