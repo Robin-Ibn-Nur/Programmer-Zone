@@ -1,6 +1,6 @@
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './Propertise.css';
 import Toast from '../Toast/Toast';
@@ -16,8 +16,12 @@ const Propertise = ({ time }) => {
         const newNumber = parseInt(numbers);
         console.log(newNumber);
         setNumber(newNumber);
-        addToLocalStorage(numbers);
     }
+
+    useEffect(() => {
+        localStorage.setItem('Number', JSON.stringify(number));
+
+    }, [number]);
     return (
         <div>
             <div className='profile'>
