@@ -3,9 +3,9 @@ const addToDb = numbers => {
     let breakTime = {};
 
     //get the shopping cart from local storage
-    const storedCart = localStorage.getItem('break-time');
-    if (storedCart) {
-        breakTime = JSON.parse(storedCart);
+    const storedTime = localStorage.getItem('break-time');
+    if (storedTime) {
+        breakTime = JSON.parse(storedTime);
     }
 
     // add quantity
