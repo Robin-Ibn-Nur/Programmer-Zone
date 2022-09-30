@@ -4,21 +4,27 @@ import React, { useEffect, useState } from 'react';
 
 import './Propertise.css';
 import Toast from '../Toast/Toast';
-import { addToLocalStorage } from '../../utilities/fakedb';
+import { getStoredTime } from '../../utilities/fakedb';
 const Propertise = ({ time }) => {
     let total = 0;
     time.forEach(element => {
         total += element.time;
         return total;
     });
-    const [number, setNumber] = useState([])
+    const [number, setNumber] = useState(getStoredTime())
     const secondBtn = (numbers) => {
         const newNumber = parseInt(numbers);
-        console.log(newNumber);
-        addToLocalStorage(number)
         setNumber(newNumber);
     }
-
+    useEffect(() => {
+        localStorage.setItem('break-time', JSON.stringify(number));
+    }, [number]);
+    useEffect(() => {
+        const items = JSON.parse(localStorage.getItem('break-time'));
+        if (items) {
+            setNumber(items);
+        }
+    }, []);
     return (
         <div>
             <div className='profile'>
