@@ -6,6 +6,7 @@ import Propertise from '../Propertise/Propertise';
 import './Club.css'
 
 const Club = () => {
+    // club
     const [positives, setPositives] = useState([]);
     const [times, setTimes] = useState([])
     useEffect(() => {
